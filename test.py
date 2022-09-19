@@ -5,7 +5,7 @@ st.header("Witaj w aplikacji analitycznej")
 st.write("Możesz wybrać plik csv do analizy")
 
 plik = st.file_uploader('Wybierz CSV')
-plik.
+
 try:
 	if st.button("Pokaż CSV"): 
 		import pandas as pd
