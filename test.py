@@ -7,13 +7,10 @@ df1=df[["Data","Otwarcie"]].set_index("Data").sort_index(ascending=False)
 #df1.plot()
 st.pyplot(df1)
 '''
+import streamlit as st
+import pandas as pd
+chart_data = pd.DataFrame(
+    np.random.randn(20, 3),
+    columns=['a', 'b', 'c'])
 
-
-import matplotlib.pyplot as plt
-import numpy as np
-
-arr = np.random.normal(1, 1, size=100)
-fig, ax = plt.subplots()
-ax.hist(arr, bins=20)
-
-st.pyplot(fig)
+st.line_chart(chart_data)
