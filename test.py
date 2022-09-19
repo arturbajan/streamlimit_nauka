@@ -1,4 +1,5 @@
 import streamlit as st
+from tools
 
 st.header("Witaj w aplikacji analitycznej")
 st.write("Możesz wybrać plik csv do analizy")
